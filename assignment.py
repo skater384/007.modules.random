@@ -32,3 +32,29 @@ def coinToss():
         print("Tails, you were correct")
     elif x == 0 and q == "Heads":
         print("Tails, you were incorrect")
+
+
+def RPS():
+    q = ""
+    x = randint(0, 2)
+    while q != "Rock" or q != "Paper" or q != "Scissors":
+        q = input("Rock, Paper, or Scissors? ").strip()
+        if q == "Rock": 
+            if x == 0: print("Opponent chose Rock, you Tied")
+            elif x == 1: print("Opponent chose Paper, you Lose")
+            elif x == 2: print("Opponent chose Scissors, you Win")
+            break
+        if q == "Paper": 
+            if x == 0: print("Opponent chose Rock, you Win")
+            elif x == 1: print("Opponent chose Paper, you Tied")
+            elif x == 2: print("Opponent chose Scissors, you Lose")
+            break
+        if q == "Scissors": 
+            if x == 0: print("Opponent chose Rock, you Lose")
+            elif x == 1: print("Opponent chose Paper, you Win")
+            elif x == 2: print("Opponent chose Scissors, you Tied")
+            break
+
+
+def DnD():
+    x = randint(3,18)
