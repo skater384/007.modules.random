@@ -101,9 +101,6 @@ def DnD2():
             print(f"{i} is {(x+y+z)}")
 
 
-DnD2()
-
-
 def Dealer():
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
     suits = ['C', 'D', 'H', 'S']
